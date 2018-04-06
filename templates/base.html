@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"
+		content="ie=edge">
+	<title>Wok On The Wild Side</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    </head>
+    <body>
+
+        <div class="container">
+        {% block content %}
+        {% endblock %}
+        </div>
+        
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/materialize.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    </body>
+</html>
