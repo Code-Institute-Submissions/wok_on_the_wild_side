@@ -14,6 +14,7 @@
     </head>
     <body>
     <header>
+      <div class="navbar-fixed">
         <nav>
             <div class="container nav-wrapper">
                 <a href="{{ url_for('index') }}" class="brand-logo">Wok On The Wild Side</a>
@@ -24,9 +25,10 @@
                 </ul>
             </div>
         </nav>
+      </div>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Contribute</a></li>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('contribute') }}">Contribute</a></li>
         </ul>
     </header>
 
@@ -40,7 +42,7 @@
           <div class="container">
             <div class="row">
               <div class="col s6 center-align">
-                <p class="grey-text text-lighten-4">Created by Dean Flint</p>
+                <p class="created-by">Created by Dean Flint</p>
               </div>
               <div class="col s6 center-align">
                 <ul id="social">
