@@ -1,11 +1,14 @@
+html {
+  min-width: 400px; }
+
 body {
-  min-width: 400px;
   font-family: 'Open Sans', sans-serif; }
 
 #main-content {
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 50px; }
 
 .page-footer {
   flex: 1 0 auto;
@@ -18,7 +21,7 @@ body {
       font-size: 24px;
       color: #B9CFE1; }
       .page-footer #social li .fa:hover {
-        color: #D7EDC1; }
+        color: #fff; }
 
 footer .row {
   margin-bottom: 0;
@@ -27,15 +30,20 @@ footer .row {
 nav {
   background-color: #005581; }
   nav .brand-logo {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    padding: 0 10px; }
     nav .brand-logo:hover {
-      color: #6EBE3B; }
+      color: #B9CFE1; }
   nav ul a:hover {
-    background-color: #6EBE3B;
-    color: #D7EDC1; }
+    background-color: #B9CFE1;
+    color: #005581; }
+
+.nav-wrapper .sidenav-trigger .fa {
+  font-size: 28px; }
+  .nav-wrapper .sidenav-trigger .fa:hover {
+    color: #B9CFE1; }
 
 .card {
-  background-color: #B9CFE1;
   color: #005581; }
   .card tr:nth-child(1) {
     padding-bottom: 0; }
@@ -58,11 +66,32 @@ nav {
   .card .btn {
     background-color: #005581; }
     .card .btn:hover {
-      background-color: #6EBE3B;
-      color: #D7EDC1; }
+      background-color: #B9CFE1;
+      color: #005581; }
+
+.top-content-box {
+  -webkit-box-shadow: 3px 3px 10px 3px #dedbde;
+  -moz-box-shadow: 3px 3px 10px 3px #dedbde;
+  box-shadow: 3px 3px 10px 3px #dedbde; }
+
+.ingredients-list {
+  border-right: 1px solid #dedbde; }
+
+.recipe-stats {
+  margin: 10%; }
+  .recipe-stats tr td {
+    text-align: center;
+    padding: 10px; }
+  .recipe-stats tr td:nth-child(1) {
+    border-right: 1px solid rgba(0, 0, 0, 0.12); }
+  .recipe-stats tr:nth-child(2) {
+    border-bottom: none; }
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
-    left: 0;
-    transform: none;
-    padding-left: 25%; } }
+    left: 180px;
+    white-space: nowrap; } }
+
+@media only screen and (max-width: 550px) {
+  .page-footer #social li {
+    margin: 0 10px; } }

@@ -1,14 +1,20 @@
 @import "helpers/variables";
+@import "helpers/mixins";
+
+html{
+  min-width: 400px;
+}
 
 body {
-  min-width: 400px;
   font-family: 'Open Sans', sans-serif;
 }
+
 
 #main-content {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .page-footer {
@@ -23,7 +29,7 @@ body {
         font-size: 24px;
         color: $light-blue;
       &:hover{
-        color: $light-green;
+        color: #fff;
         }
       }
     }
@@ -43,15 +49,27 @@ nav {
   background-color: $dark-blue;
   .brand-logo{
     font-size: 1.5em;
+    padding: 0 10px;
     &:hover {
-      color: $dark-green;
+      color: $light-blue;
       }
     }
   ul {
-    a {
+      a {
       &:hover {
-        background-color: $dark-green;
-        color: $light-green;
+        background-color: $light-blue;
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+.nav-wrapper {
+  .sidenav-trigger {
+    .fa {
+      font-size: 28px;
+      &:hover{
+        color: $light-blue;
       }
     }
   }
@@ -59,7 +77,6 @@ nav {
 
 
 .card{
-  background-color: $light-blue;
   color: $dark-blue;
   tr:nth-child(1){
     padding-bottom: 0;
@@ -89,19 +106,55 @@ nav {
   .btn {
     background-color: $dark-blue;
   &:hover {
-    background-color: $dark-green;
-    color: $light-green;
+    background-color: $light-blue;
+    color: $dark-blue;
     }
   }
 }
+
+.top-content-box{
+  @include box-shadow( 3px 3px 10px 3px rgba(222,219,222,1));
+}
+
+.ingredients-list{
+  border-right: 1px solid $light-grey;
+}
+
+.recipe-stats{
+  margin: 10%;
+  tr{
+    td{
+      text-align: center;
+      padding: 10px;
+    }
+    td:nth-child(1){
+      border-right: 1px solid rgba(0, 0, 0, 0.12)
+    }
+  }
+  tr:nth-child(2){
+    border-bottom: none;
+  }
+}
+
+
 
 
 @media only screen and (max-width: 992px){
 nav {
   .brand-logo{
-    left: 0;
-    transform: none;
-    padding-left: 25%;
+    left: 180px;
+    white-space: nowrap;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px){
+
+.page-footer {
+  #social{
+    li{
+      margin: 0 10px;
+      }
     }
   }
 }
