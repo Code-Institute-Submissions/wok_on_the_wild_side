@@ -1,0 +1,188 @@
+{
+    "dish_name": "Sloppy joes",
+    "descr": "Sloppy joes",
+    "ingr": [
+        "1 pound ground beef",
+        "6 sandwich buns",
+        "2 tablespoons flour, or more",
+        "1 cup ketchup",
+        "1/2 cup diced onion",
+        "1/2 teaspoon dry mustard",
+        "1 tablespoon vinegar",
+        "1 tablespoon brown sugar"
+    ],
+    "step": [
+        "Brown the beef in a skillet over medium heat; pour off fat.",
+        "In a small bowl, mix together the brown sugar, vinegar, and mustard.",
+        "Add this mixture to the beef along with the celery and onion, and ketchup. Stir together to combine.",
+        "Sprinkle flour over mixture and stir to mix well. If mixture is still not thick enough to your liking, add a bit more flour until it is. Serve on buns."
+    ],
+    "c_time": "20",
+    "serves": "3",
+    "cuisine": "American",
+    "author": "Obama"
+}
+
+
+
+{
+    "dish_name":"Toad in the hole",
+    "descr":"A dish consisting of sausages baked in batter.",
+    "ingr": [
+        "8 pork sausages",
+        "salt and pepper to taste",
+        "250ml (8 fl oz) milk",
+        "4 eggs",
+        "225g (8 oz) plain flour",
+        "1 tablespoon vegetable oil"
+    ],
+    "step": [
+        "Preheat the oven to 200 degrees C /gas mark 6.",
+        "Pour the oil into the bottom of a baking dish, and arrange the sausages over it in a single layer. Bake for 10 minutes in the preheated oven.",
+        "Meanwhile, in a medium bowl, whisk together the flour, eggs and half of the milk until smooth. Gradually mix in the rest of the milk until a smooth batter is achieved. Season with salt and pepper.",
+        "Remove the sausages from the oven, and ladle the batter over them until the sausages are 3/4 covered. Return to the oven, and bake for 35 minutes, or until the centre is risen and browned. Don't worry if the underside seems slightly soft, as this is normal."
+    ],
+    "c_time":"40",
+    "serves":"8",
+    "cuisine":"british",
+    "author":"May"
+}
+
+
+
+{
+    "dish_name":"Egg fried rice",
+    "descr":"A dish of boiled or steamed rice that is stir-fried typically with soy sauce, beaten egg, chopped meat, and vegetables.",
+    "ingr": [
+        "1 egg",
+        "2 tsp sesame oil",
+        "2 tbsp vegetable oil",
+        "200g/7oz long-grain rice",
+        "100g/4oz frozen peas, defrosted",
+        "4 spring onions, finely chopped",
+        "100g/4oz beansprouts",
+        "1-2 tsp soy sauce",
+        "ground white pepper"
+    ],
+    "step": [
+        "Beat together the egg and sesame oil and put to one side.",
+        "Heat the vegetable oil in a wok or large frying pan. When it's shimmering and almost smoking, add the rice and stir-fry for about 3-4 minutes until completely heated through.",
+        "Add the peas, spring onions and beansprouts, if using. Stir-fry, turning the rice constantly around the pan, for about 3 minutes. Season well with soy sauce and pepper, then push to one side of the pan. ",
+        "Pour the beaten egg mixture into the other side and leave for about 10 seconds so it begins to set. Using a chopstick, briskly swirl around the egg to break it up and then toss around with the rice. Stir-fry for a further minute and serve straight away."
+    ],
+    "c_time":"25",
+    "serves":"4",
+    "cuisine":"Chinese",
+    "author":"Huang"
+}
+
+
+
+{
+    "dish_name":"Chicken tikka with spiced rice",
+    "descr":"This healthy baked chicken with fragrant, fresh rice is nutritious and flavoursome",
+    "ingr": [
+        "4 skinless chicken breasts",
+        "150g pot low-fat natural yogurt",
+        "50g tikka paste",
+        "100g/4oz cucumber, diced",
+        "1 tbsp roughly chopped mint leaves",
+        "1 red onion, cut into thin wedges",
+        "140g easy-cook long grain rice",
+        "1 tbsp medium curry powder",
+        "50g frozen pea",
+        "1 small red pepper, diced"
+    ],
+    "step": [
+        "Slash each chicken breast deeply with a knife 3-4 times on one side. Put in a bowl and add 50g of the yogurt and the tikka paste. Mix well, cover and marinate in the fridge for 30 mins. Make the raita by stirring the cucumber and most of the mint into the rest of the yogurt. Season with black pepper, cover and chill.",
+        "Heat oven to 240C/220C fan/gas 9. Scatter the onion wedges over a foil-lined baking tray. Remove the chicken from the marinade, shake off any excess and place on top of the onion wedges. Cook for 20 mins.",
+        "Meanwhile, tip the rice, curry powder, peas and pepper into a pan of boiling water and simmer for 10 mins or until the rice is just tender. Drain well and divide the rice between 4 plates. Add the chicken, roasted onion and remaining mint. Serve with the cucumber raita."
+    ],
+    "c_time":"30",
+    "serves":"4",
+    "cuisine":"Indian",
+    "author":"Din"
+}
+
+
+
+
+{
+    "dish_name":"Lemony Tuna and Olive Oil Pasta",
+    "descr":"A simple and delicious pasta recipe! ",
+    "ingr": [
+        "3/4 pound linguine ",
+        "3 tablespoons olive oil ",
+        "4 cloves garlic, sliced ",
+        "1/4 teaspoon crushed red pepper ",
+        "2 6-ounce cans oil-packed tuna ",
+        "1 teaspoon finely grated lemon zest ",
+        "kosher salt and black pepper ",
+        "1/2 cup chopped fresh flat-leaf parsley leaves"
+    ],
+    "step": [
+        "Cook the pasta according to the package directions. Reserve ½ cup of the cooking water; drain the pasta.",
+        "Wipe out the pasta pot. Add the oil, garlic, and red pepper and cook over medium heat, stirring frequently, until fragrant, 2 to 3 minutes.",
+        "Add the pasta, tuna, lemon zest, ¾ teaspoon salt, ½ teaspoon black pepper, and the reserved pasta water and cook over low heat, tossing, until the sauce is slightly thickened and coats the pasta, 1 to 2 minutes."
+    ],
+    "c_time":"30",
+    "serves":"7",
+    "cuisine":"Italian",
+    "author":"Perry"
+}
+
+
+
+
+{
+    "dish_name":"Miso Chicken Teriyaki",
+    "descr":"This is an amazing collaboration of miso soup and teriyaki chicken",
+    "ingr": [
+        "200g chicken thigh filets, skin on, boneless",
+        "8 green beans, boiled",
+        "2 tbsp liquid miso with dashi",
+        "2 tbsp water",
+        "1 tsp vegetable oil",
+        "pinch of salt and pepper"
+    ],
+    "step": [
+        "Cut any excess fat from the chicken thigh fillets. Season with salt and pepper. ",
+        "Heat the vegetable oil in a frying pan on medium heat. Place the fillets skin side down on the frying pan and cook for 3-4 mins until the skin is browned. Turn over and cook for a further 5-6 mins until browned. ",
+        "In a small bowl combine the liquid miso with 2 tbsp water. Spread this mixture on the top of the fillets. Add the boiled green beans, and simmer for 2-3 mins until the sauce thickens. ",
+        "Remove from the heat. Slice the fillets into bite-sized strips. Plate the fillets with the green beans. Serve with rice for a delicious complete meal. "
+    ],
+    "c_time":"15",
+    "serves":"2",
+    "cuisine":"Japanese",
+    "author":"Haruto"
+}
+
+
+
+
+{
+    "dish_name":"Pad Thai",
+    "descr":"A Thai dish based on rice noodles.",
+    "ingr": [
+        "125g rice noodles",
+        "3 tbsp lime juice about 2 limes",
+        "½ tsp cayenne pepper",
+        "2 tsp light muscovado sugar",
+        "2 tbsp fish sauce",
+        "2 tbsp vegetable oil",
+        "200g cooked and peeled tiger prawn",
+        "4 spring onions",
+        "140g beansprout",
+        "25g salted peanut"
+    ],
+    "step": [
+        "Put the noodles in a large heatproof bowl, pour boiling water over them and leave for 4 minutes, then drain and refresh under cold running water.",
+        "Put the lime juice, cayenne, sugar and fish sauce in a bowl and mix well. Have all the other ingredients ready by the cooker.",
+        "Heat the oil and fry the prawns until warmed through. Add the spring onions and noodles and toss around. Tip in the lime juice mixture, then stir in the beansprouts and half the peanuts and coriander. Cook for 1 minute until everything is heated through.",
+        "Pile into a large dish, scatter with the rest of the peanuts and coriander, and serve with lime wedges and sweet chilli sauce."
+    ],
+    "c_time":"35",
+    "serves":"3",
+    "cuisine":"Thai",
+    "author":"Ploy"
+}
