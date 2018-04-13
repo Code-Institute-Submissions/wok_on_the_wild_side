@@ -17,6 +17,12 @@ body {
   margin-bottom: 25px;
 }
 
+.recipe_cards{
+  .card{
+    min-height: 340px;
+  }
+}
+
 .page-footer {
   flex: 1 0 auto;
   background-color: $dark-blue;
