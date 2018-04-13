@@ -6,17 +6,14 @@
         <div class="col l10 offset-l1 ">
             <h4>Add Recipe</h4>
             
-            {% if error %}
-                <p class=error><strong>Error:</strong> {{ error }}
-              {% endif %}
-            
-            <form action="{{ url_for('insert_recipe') }}" method="POST" class="" enctype="multipart/form-data">
+            <form action="{{ url_for('insert_recipe', form=form) }}" method="POST" class="" enctype="multipart/form-data">
+                    
                     <div class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
                         <input id="icon_prefix dish_name" name="dish_name" type="text" class="validate">
                         <label for="icon_prefix"> Dish Name</label>
                     </div>
-        
+
                     <div class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
                         <textarea name="descr" id="icon_prefix descr" class="materialize-textarea"></textarea>
