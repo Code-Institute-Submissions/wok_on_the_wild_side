@@ -5,26 +5,30 @@ $(document).ready(function(){
     $('select').formSelect();
   });
 
-  
+
+var ing_i = 1;
+var step_i = 1;
+
 $("#add_ingr").click(function(){
   var newInput = $(document.createElement('input'))
    .attr({
-       id: 'ingr',
+       id: 'ingr'+ing_i,
        name: 'ingr',
        type: "text",
-       "class": "validate"
+       "class": "validate ingr"
    });
   $("#ingredients").append(newInput);
+  ing_i++;
 });
-
 
 $("#add_step").click(function(){
   var newInput = $(document.createElement('input'))
    .attr({
-       id: 'step',
+       id: 'step'+step_i,
        name: 'step',
        type: "text",
        "class": "validate"
    });
   $("#steps").append(newInput);
+  step_i++
 });
