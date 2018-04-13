@@ -1,6 +1,6 @@
 {
     "dish_name": "Sloppy joes",
-    "descr": "Sloppy joes",
+    "descr": "A hamburger in which the minced-beef filling is made into a kind of meat sauce, typically with tomatoes and spices.",
     "ingr": [
         "1 pound ground beef",
         "6 sandwich buns",
@@ -39,12 +39,14 @@
     "step": [
         "Preheat the oven to 200 degrees C /gas mark 6.",
         "Pour the oil into the bottom of a baking dish, and arrange the sausages over it in a single layer. Bake for 10 minutes in the preheated oven.",
-        "Meanwhile, in a medium bowl, whisk together the flour, eggs and half of the milk until smooth. Gradually mix in the rest of the milk until a smooth batter is achieved. Season with salt and pepper.",
-        "Remove the sausages from the oven, and ladle the batter over them until the sausages are 3/4 covered. Return to the oven, and bake for 35 minutes, or until the centre is risen and browned. Don't worry if the underside seems slightly soft, as this is normal."
+        "Meanwhile, in a medium bowl, whisk together the flour, eggs and half of the milk until smooth.", 
+        "Gradually mix in the rest of the milk until a smooth batter is achieved. Season with salt and pepper.",
+        "Remove the sausages from the oven, and ladle the batter over them until the sausages are 3/4 covered.", 
+        "Return to the oven, and bake for 35 minutes, or until the centre is risen and browned. Don't worry if the underside seems slightly soft, as this is normal."
     ],
     "c_time":"40",
     "serves":"8",
-    "cuisine":"british",
+    "cuisine":"British",
     "author":"May"
 }
 
@@ -68,7 +70,8 @@
         "Beat together the egg and sesame oil and put to one side.",
         "Heat the vegetable oil in a wok or large frying pan. When it's shimmering and almost smoking, add the rice and stir-fry for about 3-4 minutes until completely heated through.",
         "Add the peas, spring onions and beansprouts, if using. Stir-fry, turning the rice constantly around the pan, for about 3 minutes. Season well with soy sauce and pepper, then push to one side of the pan. ",
-        "Pour the beaten egg mixture into the other side and leave for about 10 seconds so it begins to set. Using a chopstick, briskly swirl around the egg to break it up and then toss around with the rice. Stir-fry for a further minute and serve straight away."
+        "Pour the beaten egg mixture into the other side and leave for about 10 seconds so it begins to set.", 
+        "Using a chopstick, briskly swirl around the egg to break it up and then toss around with the rice. Stir-fry for a further minute and serve straight away."
     ],
     "c_time":"25",
     "serves":"4",
@@ -94,9 +97,12 @@
         "1 small red pepper, diced"
     ],
     "step": [
-        "Slash each chicken breast deeply with a knife 3-4 times on one side. Put in a bowl and add 50g of the yogurt and the tikka paste. Mix well, cover and marinate in the fridge for 30 mins. Make the raita by stirring the cucumber and most of the mint into the rest of the yogurt. Season with black pepper, cover and chill.",
-        "Heat oven to 240C/220C fan/gas 9. Scatter the onion wedges over a foil-lined baking tray. Remove the chicken from the marinade, shake off any excess and place on top of the onion wedges. Cook for 20 mins.",
-        "Meanwhile, tip the rice, curry powder, peas and pepper into a pan of boiling water and simmer for 10 mins or until the rice is just tender. Drain well and divide the rice between 4 plates. Add the chicken, roasted onion and remaining mint. Serve with the cucumber raita."
+        "Slash each chicken breast deeply with a knife 3-4 times on one side. Put in a bowl and add 50g of the yogurt and the tikka paste.", 
+        "Mix well, cover and marinate in the fridge for 30 mins. Make the raita by stirring the cucumber and most of the mint into the rest of the yogurt. Season with black pepper, cover and chill.",
+        "Heat oven to 240C/220C fan/gas 9. Scatter the onion wedges over a foil-lined baking tray.", 
+        "Remove the chicken from the marinade, shake off any excess and place on top of the onion wedges. Cook for 20 mins.",
+        "Meanwhile, tip the rice, curry powder, peas and pepper into a pan of boiling water and simmer for 10 mins or until the rice is just tender.", 
+        "Drain well and divide the rice between 4 plates. Add the chicken, roasted onion and remaining mint. Serve with the cucumber raita."
     ],
     "c_time":"30",
     "serves":"4",
@@ -147,7 +153,8 @@
     ],
     "step": [
         "Cut any excess fat from the chicken thigh fillets. Season with salt and pepper. ",
-        "Heat the vegetable oil in a frying pan on medium heat. Place the fillets skin side down on the frying pan and cook for 3-4 mins until the skin is browned. Turn over and cook for a further 5-6 mins until browned. ",
+        "Heat the vegetable oil in a frying pan on medium heat. Place the fillets skin side down on the frying pan and cook for 3-4 mins until the skin is browned.", 
+        "Turn over and cook for a further 5-6 mins until browned. ",
         "In a small bowl combine the liquid miso with 2 tbsp water. Spread this mixture on the top of the fillets. Add the boiled green beans, and simmer for 2-3 mins until the sauce thickens. ",
         "Remove from the heat. Slice the fillets into bite-sized strips. Plate the fillets with the green beans. Serve with rice for a delicious complete meal. "
     ],
@@ -178,7 +185,8 @@
     "step": [
         "Put the noodles in a large heatproof bowl, pour boiling water over them and leave for 4 minutes, then drain and refresh under cold running water.",
         "Put the lime juice, cayenne, sugar and fish sauce in a bowl and mix well. Have all the other ingredients ready by the cooker.",
-        "Heat the oil and fry the prawns until warmed through. Add the spring onions and noodles and toss around. Tip in the lime juice mixture, then stir in the beansprouts and half the peanuts and coriander. Cook for 1 minute until everything is heated through.",
+        "Heat the oil and fry the prawns until warmed through. Add the spring onions and noodles and toss around. Tip in the lime juice mixture, then stir in the beansprouts and half the peanuts and coriander.",
+        "Cook for 1 minute until everything is heated through.",
         "Pile into a large dish, scatter with the rest of the peanuts and coriander, and serve with lime wedges and sweet chilli sauce."
     ],
     "c_time":"35",
@@ -186,3 +194,32 @@
     "cuisine":"Thai",
     "author":"Ploy"
 }
+
+
+{
+    "cuisine_desc": "American"
+}
+
+{
+    "cuisine_desc": "British"
+}
+
+{
+    "cuisine_desc": "Chinese"
+}
+    
+{
+    "cuisine_desc": "Indian"
+}    
+
+{
+    "cuisine_desc": "Italian"
+}
+    
+{
+    "cuisine_desc": "Japanese"
+} 
+
+{
+    "cuisine_desc": "Thai"
+} 
