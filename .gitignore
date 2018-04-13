@@ -1,2 +1,4 @@
 node_modules/
 config.py
+static/scss/style.css
+static/scss/style.css.map
