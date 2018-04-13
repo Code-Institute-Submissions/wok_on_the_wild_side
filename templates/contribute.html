@@ -6,7 +6,11 @@
         <div class="col l10 offset-l1 ">
             <h4>Add Recipe</h4>
             
-            <form action="#" method="POST" class="">
+            {% if error %}
+                <p class=error><strong>Error:</strong> {{ error }}
+              {% endif %}
+            
+            <form action="{{ url_for('insert_recipe') }}" method="POST" class="" enctype="multipart/form-data">
                     <div class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
                         <input id="icon_prefix dish_name" name="dish_name" type="text" class="validate">
@@ -34,7 +38,9 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                            <option value="6">5+</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
                         </select>
                         <label>Select</label>
                     </div>
@@ -43,13 +49,9 @@
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
                         <select id="cuisine" name="cuisine">
                             <option value="" disabled selected>Cuisine</option>
-                            <option value="american">American</option>
-                            <option value="british">British</option>
-                            <option value="chinese">Chinese</option>
-                            <option value="indian">Indian</option>
-                            <option value="italian">Italian</option>
-                            <option value="japanese">Japanese</option>
-                            <option value="thai">Thai</option>
+                            {% for cuisine in cuisines %}
+                            <option value="{{cuisine.cuisine_desc}}">{{cuisine.cuisine_desc}}</option>
+                            {% endfor %}
                         </select>
                         <label>Select</label>
                     </div>
@@ -58,11 +60,24 @@
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
                         <input id="icon_prefix author" name="author" type="text" class="validate">
                         <label for="icon_prefix"> Author</label>
+                    </div>
+                    
+                    
+                    <div class="file-field input-field col s12">
+                        <p>Dish Image</p>
+                        <div class="btn">
+                            <span>File</span>
+                            <input type="file" name="photo">
+                        </div>
+                        <input type="submit">
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
                     </div>                    
                     
                     <div id="ingredients" class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>                        
-                        <input id="icon_prefix ingr" name="ingr" type="text" class="validate">
+                        <input id="icon_prefix" name="ingr" type="text" class="validate">
                         <label for="icon_prefix">Ingredients</label>
                     </div>
                     
@@ -74,7 +89,7 @@
                     
                     <div id="steps" class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <input id="icon_prefix step" name="step" type="text" class="validate">
+                        <input id="icon_prefix" name="step" type="text" class="validate">
                         <label for="icon_prefix">Steps</label>
                     </div>
                     
