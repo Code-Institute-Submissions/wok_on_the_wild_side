@@ -6,30 +6,40 @@
         <div class="col l10 offset-l1 ">
             <h4>Add Recipe</h4>
             
-            <form action="{{ url_for('insert_recipe', form=form) }}" method="POST" class="" enctype="multipart/form-data">
+            <form id="contribute-form" action="{{ url_for('insert_recipe') }}" method="POST" class="" enctype="multipart/form-data">
                     
                     <div class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <input id="icon_prefix dish_name" name="dish_name" type="text" class="validate">
+                        <input id="icon_prefix dish_name" name="dish_name" type="text" class="validate" >
                         <label for="icon_prefix"> Dish Name</label>
                     </div>
+                    
+                    <div class="file-field input-field col s12">
+                        <div class="btn">
+                            <span>Image</span>
+                            <input type="file" name="photo"  >
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path" name="photo" type="text" id="photo" class="validate">
+                        </div>
+                    </div> 
 
                     <div class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <textarea name="descr" id="icon_prefix descr" class="materialize-textarea"></textarea>
+                        <textarea name="descr" id="icon_prefix descr" class="materialize-textarea validate" ></textarea>
                         <label for="icon_prefix"> Description</label>
                     </div>
                     
-                    <div class="input-field col s12">
+                    <div class="input-field col s12 m4">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <input id="icon_prefix c_time" name="c_time" type="text" class="validate">
+                        <input id="icon_prefix c_time" name="c_time" type="text" class="validate" >
                         <label for="icon_prefix"> Cooking Time (Minutes)</label>
                     </div>
                     
-                     <div class="input-field col m6">
+                     <div class="input-field col s12 m4">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <select id="serves" name="serves">
-                            <option value="" disabled selected>Serves</option>
+                        <select id="serves" name="serves" class="validate">
+                            <option value="">Select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -39,42 +49,31 @@
                             <option value="7">7</option>
                             <option value="8">8</option>
                         </select>
-                        <label>Select</label>
+                        <label>Serves</label>
                     </div>
                     
-                    <div class="input-field col m6">
+                    <div class="input-field col s12 m4">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <select id="cuisine" name="cuisine">
-                            <option value="" disabled selected>Cuisine</option>
+                        <select id="cuisine" name="cuisine" class="validate">
+                            <option value="">Select</option>
                             {% for cuisine in cuisines %}
                             <option value="{{cuisine.cuisine_desc}}">{{cuisine.cuisine_desc}}</option>
                             {% endfor %}
                         </select>
-                        <label>Select</label>
+                        <label>Cuisine</label>
                     </div>
 
-                    <div class="input-field col s12">
+                    <div class="input-field col m12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <input id="icon_prefix author" name="author" type="text" class="validate">
-                        <label for="icon_prefix"> Author</label>
+                        <input id="icon_prefix author" name="author" type="text" class="validate" >
+                        <label for="icon_prefix">Author</label>
                     </div>
                     
-                    
-                    <div class="file-field input-field col s12">
-                        <p>Dish Image</p>
-                        <div class="btn">
-                            <span>File</span>
-                            <input type="file" name="photo">
-                        </div>
-                        <input type="submit">
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
-                        </div>
-                    </div>                    
+                   
                     
                     <div id="ingredients" class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>                        
-                        <input id="icon_prefix" name="ingr" type="text" class="validate">
+                        <input id="icon_prefix ingr" name="ingr" type="text" class="validate" >
                         <label for="icon_prefix">Ingredients</label>
                     </div>
                     
@@ -86,16 +85,19 @@
                     
                     <div id="steps" class="input-field col s12">
                         <i class="fa fa-pencil-square-o prefix" aria-hidden="true"></i>
-                        <input id="icon_prefix" name="step" type="text" class="validate">
+                        <input id="icon_prefix step" name="step" type="text" class="validate" >
                         <label for="icon_prefix">Steps</label>
                     </div>
                     
                     <div class="col s12">
-                        <button class="btn waves-effect waves-light right" type="button" id="add_step">
+                        <button class="btn waves-effect waves-light right" type="button" id="add_step" >
                             <i class="fa fa-plus-square" aria-hidden="true"></i>
                         </button>
-                    </div>                    
+                    </div>
                     
+
+
+
                     <div class="col s4 offset-s5">
                         <button class="btn waves-effect waves-light " type="submit" name="action">Submit Recipe
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
@@ -103,8 +105,6 @@
                     </div>
                 </div>
             </form>
-            
-                             
         </div>
     </div>
 
