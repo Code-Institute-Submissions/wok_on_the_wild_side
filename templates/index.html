@@ -4,25 +4,25 @@
 
   <div class="row recipe_cards">
       {% for recipe in recipes %}
-    <div class="col s12 m6 l4">
+    <div class="col s6 m4 l3">
         <div class="card hoverable">
-            <div class="card-content card-head">     
-                <span class="card-title">{{ recipe.dish_name }}</span>
+            <div class="card-image">
+              <img class="circle responsive-img" src="static/file_uploads/{{recipe.photo}}">
             </div>
             <div class="card-content"> 
                 <table>
                     <tbody>
                       <tr>
                         <td colspan="2">
-                            <p>{{ recipe.descr }}</p>
+                            <h6>{{ recipe.dish_name }}</h6s>
                         </td>
-                      </tr>
+                      </tr> 
                       <tr>
-                        <td style= "width: 40%">
+                        <td>
                             <h6>Time</h6>
                             <p>{{recipe.c_time}} mins</p>
                         </td>
-                        <td style= "width: 60%">
+                        <td>
                             <h6>Cuisine</h6>
                             <p>{{recipe.cuisine}}</p>
                         </td>
