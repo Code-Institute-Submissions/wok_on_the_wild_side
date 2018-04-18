@@ -30,5 +30,8 @@ $("#add_step").click(function(){
        "class": "validate"
    });
   $("#steps").append(newInput);
-  step_i++
+  step_i++;
 });
+
+ 
+
