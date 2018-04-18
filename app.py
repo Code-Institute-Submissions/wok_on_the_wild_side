@@ -4,7 +4,6 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from config import mongo_uri
 from flask_uploads import UploadSet, configure_uploads, IMAGES
-from wtforms import Form, BooleanField, StringField, validators, IntegerField, SelectField
 
 
 app = Flask(__name__)
@@ -14,50 +13,6 @@ configure_uploads(app, photos)
 app.config["MONGO_DBNAME"] = 'wok_on_the_wild_side'
 app.config["MONGO_URI"] = mongo_uri
 mongo = PyMongo(app)
-
-
-
-class FormValidation(Form):
-    v_dish_name = StringField('dish_name', 
-        [
-            validators.Length(min=4, message=(u'Not enough characters.')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_descr = StringField('descr', 
-        [
-            validators.Length(min=4, message=(u'Not enough characters.')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_ingr = StringField('ingr', 
-        [
-            validators.Length(min=4, message=(u'Not enough characters.')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_step = StringField('step', 
-        [
-            validators.Length(min=4, message=(u'Not enough characters.')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_c_time = IntegerField('c_time', 
-        [
-            validators.NumberRange(min=5, max=180, message=(u'Minimum time: 5mins, Maximum time: 180mins')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_serves = SelectField('serves', 
-        [
-            validators.NumberRange(min=1, max=8, message=(u'Minimum time: 5mins, Maximum time: 180mins')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_cuisine = SelectField('cuisine', 
-        [
-            validators.Length(min=4, message=(u'Not enough characters.')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
-    v_author = StringField('author', 
-        [
-            validators.Length(min=4, message=(u'Not enough characters.')),
-            validators.InputRequired(message=(u'Input required'))
-        ])
 
 
 @app.route('/')
@@ -74,8 +29,7 @@ def contribute():
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
     recipes = mongo.db.recipes
-    form = FormValidation(request.form)
-    if request.method == 'POST' and form.validate() and 'photo' in request.files:
+    if request.method == 'POST' and 'photo' in request.files:
         ### File upload
         filename = photos.save(request.files['photo'])
         new_recipe = {
@@ -87,11 +41,11 @@ def insert_recipe():
         "serves": request.form.get('serves'),
         "cuisine": request.form.get('cuisine'),
         "author": request.form.get('author'),
-        "file_name": str(filename)
+        "photo": str(filename)
         }
         recipes.insert_one(new_recipe)
-        return redirect(url_for('contribute', form=form))
-    return render_template("index.html")
+        return redirect(url_for('index'))
+    return render_template("contribute.html")
     
 
 @app.route('/view_recipe/<recipe_id>')
