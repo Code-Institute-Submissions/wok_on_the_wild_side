@@ -46,28 +46,52 @@ def insert_recipe():
         recipes.insert_one(new_recipe)
         return redirect(url_for('index'))
     return render_template("contribute.html")
-    
 
 @app.route('/view_recipe/<recipe_id>')
-def viewRecipe(recipe_id):
+def view_recipe(recipe_id):
     the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("view_recipe.html",
     recipe=the_recipe)
+    
+@app.route('/edit_recipe/<recipe_id>')
+def edit_recipe(recipe_id):
+    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    _cuisines = mongo.db.cuisines.find()
+    return render_template('edit_recipe.html', recipe=the_recipe, cuisines=_cuisines)
 
 @app.route('/edit_recipe')
-def editRecipe():
-    return render_template("edit_recipe.html") 
+def update_recipe(recipe_id):
+    recipes = mongo.db.recipes
+    filename = photos.save(request.files['photo'])
+    recipes.update({ '_id': ObjectId(recipe_id)},
+    {
+        "dish_name": request.form.get('dish_name'),
+        "descr": request.form.get('descr'),
+        "ingr": request.form.getlist('ingr'),
+        "step": request.form.getlist('step'),
+        "c_time": request.form.get('c_time'),
+        "serves": request.form.get('serves'),
+        "cuisine": request.form.get('cuisine'),
+        "author": request.form.get('author'),
+        "photo": str(filename)
+    })
+    return render_template("edit_recipe.html")
+    
+@app.route('/delete_recipe/<recipe_id>')
+def delete_recipe(recipe_id):
+    mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
+    return redirect(url_for('index'))
     
 @app.route('/add_cuisine')
-def addCuisine():
+def add_cuisine():
     return render_template("add_cuisine.html")
 
 @app.route('/view_cuisine')
-def viewCuisine():
+def view_cuisine():
     return render_template("view_cuisine.html")    
     
 @app.route('/edit_cuisine')
-def editCuisine():
+def edit_cuisine():
     return render_template("edit_cuisine.html")
 
 if __name__ == '__main__':
