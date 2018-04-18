@@ -13,7 +13,7 @@ body {
   display: flex;
   min-height: 80vh;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 25px;
 }
 
@@ -85,10 +85,17 @@ nav {
   color: $dark-blue;
   tr:nth-child(1){
     padding-bottom: 0;
+    height:100px;
+    td{
+      
+    }
   }
   tr:nth-child(2){
     padding-top: 5px;
     padding-bottom: 0;
+    td{
+      width: 50%;
+    }
   }
   tr{
     border-bottom: none;
@@ -97,7 +104,7 @@ nav {
     }
   }
   .card-content{
-    padding: 0 24px;
+    padding: 0 5px;
     h6 {
       font-weight: 700;
     }
@@ -108,7 +115,12 @@ nav {
     color: white;
     padding: 12px;
   }
+  img{
+    height: 150px;
+  }
 }
+
+
 
 .btn {
     background-color: $dark-blue;
@@ -134,29 +146,63 @@ nav {
   padding: 10px;
 }
 
+.form-error {
+  color: red;
+}
+
+.input-validation-error {
+  color: green;
+}
+
+.field-validation-error{
+  color: blue;
+}
+
+#recipe-content {
+  img{
+    height: 150px;
+    margin-top: 25px;
+  }
+  h6{
+    font-weight: bold;
+  }
+}
+
+.circle{
+  border-radius: 25%;
+}
+
 .top-content-box{
   @include box-shadow( 3px 3px 10px 3px rgba(222,219,222,1));
   margin-bottom: 30px;
 }
 
+.active{
+  color: black;
+}
+
+#photo{
+  height: 1.5rem;
+}
+
 @media only screen and (max-width: 992px){
-nav {
-  .brand-logo{
-    left: 180px;
-    white-space: nowrap;
+  nav {
+    .brand-logo{
+      left: 180px;
+      white-space: nowrap;
+      }
     }
-  }
 }
 
 @media only screen and (max-width: 550px){
-.page-footer {
-  #social{
-    li{
-      margin: 0 10px;
+  .page-footer {
+    #social{
+      li{
+        margin: 0 10px;
+        }
       }
     }
   }
-}
 
 @media only screen and (min-width: 993px){
 
