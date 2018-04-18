@@ -20,7 +20,8 @@
     "c_time": "20",
     "serves": "3",
     "cuisine": "American",
-    "author": "Obama"
+    "author": "Obama",
+    "photo": "sloppyjoes.png"
 }
 
 
@@ -47,7 +48,8 @@
     "c_time":"40",
     "serves":"8",
     "cuisine":"British",
-    "author":"May"
+    "author":"May",
+    "photo": "toadinthehole.png"
 }
 
 
@@ -76,7 +78,8 @@
     "c_time":"25",
     "serves":"4",
     "cuisine":"Chinese",
-    "author":"Huang"
+    "author":"Huang",
+    "photo": "eggfriedrice.jpg"
 }
 
 
@@ -107,7 +110,8 @@
     "c_time":"30",
     "serves":"4",
     "cuisine":"Indian",
-    "author":"Din"
+    "author":"Din",
+    "photo": "chickentikka.png"
 }
 
 
@@ -134,7 +138,8 @@
     "c_time":"30",
     "serves":"7",
     "cuisine":"Italian",
-    "author":"Perry"
+    "author":"Perry",
+    "photo": "tunapasta.png"
 }
 
 
@@ -161,7 +166,8 @@
     "c_time":"15",
     "serves":"2",
     "cuisine":"Japanese",
-    "author":"Haruto"
+    "author":"Haruto",
+    "photo": "chickenteriyaki.png"
 }
 
 
@@ -192,7 +198,8 @@
     "c_time":"35",
     "serves":"3",
     "cuisine":"Thai",
-    "author":"Ploy"
+    "author":"Ploy",
+    "photo": "padthai.png"
 }
 
 
