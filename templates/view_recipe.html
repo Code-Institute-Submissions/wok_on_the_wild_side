@@ -5,9 +5,12 @@
     <div id="recipe-content">
         
         <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m6 center-align">
                 <h3>{{ recipe.dish_name }}</h3>
                 <p>{{ recipe.descr }}</p>        
+            </div>
+            <div class="col s12 m6 center-align">
+                <img class="circle" src="../static/file_uploads/{{recipe.photo}}">        
             </div>
         </div>
         
