@@ -11,7 +11,7 @@ gulp.task('sass', function(){
 
 // Move JS Files to src/js
 gulp.task('js', function(){
-	return gulp.src(['node_modules/materialize-css/dist/js/materialize.min.js', 'node_modules/jquery/dist/jquery.min.js'])
+	return gulp.src(['node_modules/materialize-css/dist/js/materialize.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/jquery-validation/dist/jquery.validate.min.js', 'node_modules/jquery-validation/dist/additional-methods.js'])
 		.pipe(gulp.dest("static/js"))
 });
 
