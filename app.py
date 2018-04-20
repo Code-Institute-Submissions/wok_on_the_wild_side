@@ -59,27 +59,48 @@ def edit_recipe(recipe_id):
     _cuisines = mongo.db.cuisines.find()
     return render_template('edit_recipe.html', recipe=the_recipe, cuisines=_cuisines)
 
-@app.route('/edit_recipe')
+@app.route('/update_recipe/<recipe_id>', methods=['POST'])
 def update_recipe(recipe_id):
     recipes = mongo.db.recipes
-    filename = photos.save(request.files['photo'])
-    recipes.update({ '_id': ObjectId(recipe_id)},
-    {
-        "dish_name": request.form.get('dish_name'),
-        "descr": request.form.get('descr'),
-        "ingr": request.form.getlist('ingr'),
-        "step": request.form.getlist('step'),
-        "c_time": request.form.get('c_time'),
-        "serves": request.form.get('serves'),
-        "cuisine": request.form.get('cuisine'),
-        "author": request.form.get('author'),
-        "photo": str(filename)
-    })
-    return render_template("edit_recipe.html")
+    recipes.update(
+    { '_id': ObjectId(recipe_id)},
+        {
+            "$set": {
+            "dish_name": request.form.get('dish_name'),
+            "descr": request.form.get('descr'),
+            "ingr": request.form.getlist('ingr'),
+            "step": request.form.getlist('step'),
+            "c_time": request.form.get('c_time'),
+            "serves": request.form.get('serves'),
+            "cuisine": request.form.get('cuisine'),
+            "author": request.form.get('author')
+            }
+        }
+    )
+    return redirect(url_for('index'))
     
 @app.route('/delete_recipe/<recipe_id>')
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
+    return redirect(url_for('index'))
+
+@app.route('/edit_photo/<recipe_id>')
+def edit_photo(recipe_id):
+    the_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template('edit_photo.html', recipe=the_recipe)
+
+@app.route('/update_photo/<recipe_id>', methods=['POST'])
+def update_photo(recipe_id):
+    recipes = mongo.db.recipes
+    filename = photos.save(request.files['photo'])
+    recipes.update(
+    { '_id': ObjectId(recipe_id)},
+        {
+            "$set": {
+            "photo": str(filename)
+            }
+        }
+    )
     return redirect(url_for('index'))
     
 @app.route('/add_cuisine')
