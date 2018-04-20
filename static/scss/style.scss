@@ -23,6 +23,7 @@ body {
   }
 }
 
+
 .page-footer {
   flex: 1 0 auto;
   background-color: $dark-blue;
@@ -122,14 +123,39 @@ nav {
 
 
 
-.btn {
+#edit_btn, .btn {
     background-color: $dark-blue;
+    margin-right:10px;
   &:hover {
     background-color: $light-blue;
     color: $dark-blue;
     }
   &:focus {
     background-color: $dark-blue;
+  }
+}
+
+#change_photo_btn {
+    background-color: $dark-sea-blue;
+    margin-right:10px;
+  &:hover {
+    background-color: $light-sea-blue;
+    color: $dark-sea-blue;
+    }
+  &:focus {
+    background-color: $dark-sea-blue;
+  }
+}
+
+#remove_ingr, #remove_step, #del_btn {
+    background-color: $dark-red;
+    margin-right:10px;
+  &:hover {
+    background-color: $light-red;
+    color: $dark-red;
+    }
+  &:focus {
+    background-color: $dark-red;
   }
 }
 
