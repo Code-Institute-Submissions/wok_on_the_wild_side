@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+
+{% block content %}
+    
+    <div class="row">
+        <div class="col l10 offset-l1 ">
+            <h4>Add Recipe</h4>
+            <form id="photo-form" action="{{ url_for('update_photo', recipe_id=recipe._id) }}" method="POST" class="" enctype="multipart/form-data">
+
+                    <div class="file-field input-field col s12">
+                        <div class="btn">
+                            <span>Image</span>
+                            <input type="file" name="photo">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" name="photo" type="text" id="photo">
+                        </div>
+                    </div> 
+
+                    <div class="col s4 offset-s5">
+                        <button class="btn waves-effect waves-light " type="submit" name="action">Save
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
