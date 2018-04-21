@@ -15,10 +15,20 @@ app.config["MONGO_URI"] = mongo_uri
 mongo = PyMongo(app)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
+    selection = request.form.get('filter_by')
+    if selection == "time":
+        _recipes = mongo.db.recipes.find().sort("c_time")
+    elif selection == "cuisine":
+        _recipes = mongo.db.recipes.find().sort("cuisine")
+    elif selection == "name":
+        _recipes = mongo.db.recipes.find().sort("dish_name")
+    else:
+        _recipes = mongo.db.recipes.find()
     return render_template("index.html",
-    recipes=mongo.db.recipes.find())
+    recipes=_recipes)
+
 
 @app.route('/contribute', methods=['GET', 'POST'])
 def contribute():
