@@ -2,6 +2,24 @@
 
 {% block content %}
 
+   <div class="row">
+        <div class="col s5 offset-s7">
+            <form action="{{ url_for('index') }}" method="POST">
+                <div class="input-field col s9">
+                    <select id="filter_by" name="filter_by">
+                        <option value=""></option>
+                        <option value="name">Recipe Name</option>
+                        <option value="time">Cooking Time</option>
+                        <option value="cuisine">Cuisine</option>
+                    </select>
+                </div>
+                <div class="input-field col s3">
+                <button class="btn waves-effect waves-light filter-btn" type="submit" name="action">Filter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
   <div class="row recipe_cards">
       {% for recipe in recipes %}
     <div class="col s6 m4 l3">
