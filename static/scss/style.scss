@@ -10,10 +10,10 @@ body {
 }
 
 #main-content {
-  display: flex;
+ // display: flex;
   min-height: 80vh;
-  flex-direction: column;
-  margin-top: 50px;
+  //flex-direction: column;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 
@@ -133,6 +133,10 @@ nav {
   &:focus {
     background-color: $dark-blue;
   }
+}
+
+.filter-btn{
+  margin-top:10px;
 }
 
 #change_photo_btn {
