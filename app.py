@@ -1,10 +1,10 @@
 import os
+import math
 from flask import Flask, render_template, redirect, request, url_for, flash
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from config import mongo_uri
 from flask_uploads import UploadSet, configure_uploads, IMAGES
-
 
 app = Flask(__name__)
 photos = UploadSet('photos', IMAGES)
@@ -15,19 +15,40 @@ app.config["MONGO_URI"] = mongo_uri
 mongo = PyMongo(app)
 
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    selection = request.form.get('filter_by')
-    if selection == "time":
-        _recipes = mongo.db.recipes.find().sort("c_time")
-    elif selection == "cuisine":
-        _recipes = mongo.db.recipes.find().sort("cuisine")
-    elif selection == "name":
-        _recipes = mongo.db.recipes.find().sort("dish_name")
+@app.route('/', defaults={'page': '0', 'selection': 'name'}, methods=['GET', 'POST'])
+@app.route('/<selection>/<page>', methods=['GET', 'POST'])
+def index(page, selection):
+
+    page=int(page)
+    
+    num_of_docs = mongo.db.recipes.count()
+    per_page = 4
+    num_of_pages = math.ceil(num_of_docs/per_page)
+    
+    if selection == "name":
+        selection = request.form.get('filter_by')
+
+    
+    if page > 0:
+        if selection == "time":
+            _recipes = mongo.db.recipes.find().sort("c_time").limit(per_page).skip(per_page * page)
+        elif selection == "cuisine":
+            _recipes = mongo.db.recipes.find().sort("cuisine").limit(per_page).skip(per_page * page)
+        else:
+            selection = "name"
+            _recipes = mongo.db.recipes.find().sort("dish_name").limit(per_page).skip(per_page * page)
     else:
-        _recipes = mongo.db.recipes.find()
+        if selection == "time":
+            _recipes = mongo.db.recipes.find().sort("c_time").limit(per_page)
+        elif selection == "cuisine":
+            _recipes = mongo.db.recipes.find().sort("cuisine").limit(per_page)
+        else:
+            selection = "name"
+            _recipes = mongo.db.recipes.find().sort("dish_name").limit(per_page)
+
     return render_template("index.html",
-    recipes=_recipes)
+    recipes=_recipes, num_of_pages=num_of_pages, page=page, selection=selection)
+
 
 
 @app.route('/contribute', methods=['GET', 'POST'])
