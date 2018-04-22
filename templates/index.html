@@ -7,10 +7,24 @@
             <form action="{{ url_for('index') }}" method="POST">
                 <div class="input-field col s9">
                     <select id="filter_by" name="filter_by">
-                        <option value=""></option>
-                        <option value="name">Recipe Name</option>
-                        <option value="time">Cooking Time</option>
-                        <option value="cuisine">Cuisine</option>
+                            {% if selection == "name" %}
+                        <option value="name" selected>Recipe Name</option>
+                            {% else %}
+                        <option value="name" >Recipe Name</option>
+                            {% endif %}
+                            
+                            {% if selection == "time" %}
+                        <option value="time" selected>Cooking Time</option>
+                            {% else %}
+                        <option value="time" >Cooking Time</option>
+                            {% endif %}
+                            
+                            {% if selection == "cuisine" %}
+                        <option value="cuisine" selected>Cuisine</option>
+                            {% else %}
+                        <option value="cuisine" >Cuisine</option>
+                            {% endif %}
+                        
                     </select>
                 </div>
                 <div class="input-field col s3">
@@ -19,13 +33,22 @@
             </form>
         </div>
     </div>
+    
+    <div class="row">
+        <ul class="pagination">
+            {% for i in range(num_of_pages) %}
+            <li class="waves-effect"><a href="{{url_for('index', page=i, selection=selection)}}">{{i+1}}</a></li>
+            {% endfor %}
+         </ul>
+    </div>
+    
 
   <div class="row recipe_cards">
       {% for recipe in recipes %}
     <div class="col s6 m4 l3">
         <div class="card hoverable">
             <div class="card-image">
-              <img class="circle responsive-img" src="static/file_uploads/{{recipe.photo}}">
+              <img class="circle responsive-img" src="../../static/file_uploads/{{recipe.photo}}">
             </div>
             <div class="card-content"> 
                 <table>
