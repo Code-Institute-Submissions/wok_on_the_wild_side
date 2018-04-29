@@ -15,7 +15,8 @@
         "Brown the beef in a skillet over medium heat; pour off fat.",
         "In a small bowl, mix together the brown sugar, vinegar, and mustard.",
         "Add this mixture to the beef along with the celery and onion, and ketchup. Stir together to combine.",
-        "Sprinkle flour over mixture and stir to mix well. If mixture is still not thick enough to your liking, add a bit more flour until it is. Serve on buns."
+        "Sprinkle flour over mixture and stir to mix well.", 
+        "If mixture is still not thick enough to your liking, add a bit more flour until it is. Serve on buns."
     ],
     "c_time": "20",
     "serves": "3",
@@ -39,11 +40,13 @@
     ],
     "step": [
         "Preheat the oven to 200 degrees C /gas mark 6.",
-        "Pour the oil into the bottom of a baking dish, and arrange the sausages over it in a single layer. Bake for 10 minutes in the preheated oven.",
+        "Pour the oil into the bottom of a baking dish, and arrange the sausages over it in a single layer.", 
+        "Bake for 10 minutes in the preheated oven.",
         "Meanwhile, in a medium bowl, whisk together the flour, eggs and half of the milk until smooth.", 
         "Gradually mix in the rest of the milk until a smooth batter is achieved. Season with salt and pepper.",
         "Remove the sausages from the oven, and ladle the batter over them until the sausages are 3/4 covered.", 
-        "Return to the oven, and bake for 35 minutes, or until the centre is risen and browned. Don't worry if the underside seems slightly soft, as this is normal."
+        "Return to the oven, and bake for 35 minutes, or until the centre is risen and browned.", 
+        "Don't worry if the underside seems slightly soft, as this is normal."
     ],
     "c_time":"40",
     "serves":"8",
@@ -71,9 +74,11 @@
     "step": [
         "Beat together the egg and sesame oil and put to one side.",
         "Heat the vegetable oil in a wok or large frying pan. When it's shimmering and almost smoking, add the rice and stir-fry for about 3-4 minutes until completely heated through.",
-        "Add the peas, spring onions and beansprouts, if using. Stir-fry, turning the rice constantly around the pan, for about 3 minutes. Season well with soy sauce and pepper, then push to one side of the pan. ",
+        "Add the peas, spring onions and beansprouts, if using. Stir-fry, turning the rice constantly around the pan, for about 3 minutes.", 
+        "Season well with soy sauce and pepper, then push to one side of the pan. ",
         "Pour the beaten egg mixture into the other side and leave for about 10 seconds so it begins to set.", 
-        "Using a chopstick, briskly swirl around the egg to break it up and then toss around with the rice. Stir-fry for a further minute and serve straight away."
+        "Using a chopstick, briskly swirl around the egg to break it up and then toss around with the rice.", 
+        "Stir-fry for a further minute and serve straight away."
     ],
     "c_time":"25",
     "serves":"4",
@@ -101,7 +106,8 @@
     ],
     "step": [
         "Slash each chicken breast deeply with a knife 3-4 times on one side. Put in a bowl and add 50g of the yogurt and the tikka paste.", 
-        "Mix well, cover and marinate in the fridge for 30 mins. Make the raita by stirring the cucumber and most of the mint into the rest of the yogurt. Season with black pepper, cover and chill.",
+        "Mix well, cover and marinate in the fridge for 30 mins. Make the raita by stirring the cucumber and most of the mint into the rest of the yogurt.", 
+        "Season with black pepper, cover and chill.",
         "Heat oven to 240C/220C fan/gas 9. Scatter the onion wedges over a foil-lined baking tray.", 
         "Remove the chicken from the marinade, shake off any excess and place on top of the onion wedges. Cook for 20 mins.",
         "Meanwhile, tip the rice, curry powder, peas and pepper into a pan of boiling water and simmer for 10 mins or until the rice is just tender.", 
@@ -133,7 +139,7 @@
     "step": [
         "Cook the pasta according to the package directions. Reserve ½ cup of the cooking water; drain the pasta.",
         "Wipe out the pasta pot. Add the oil, garlic, and red pepper and cook over medium heat, stirring frequently, until fragrant, 2 to 3 minutes.",
-        "Add the pasta, tuna, lemon zest, ¾ teaspoon salt, ½ teaspoon black pepper, and the reserved pasta water and cook over low heat, tossing, until the sauce is slightly thickened and coats the pasta, 1 to 2 minutes."
+        "Add the pasta, tuna, lemon zest, ¾ teaspoon salt, 1 teaspoon black pepper, and the reserved pasta water and cook over low heat, tossing, until the sauce is slightly thickened and coats the pasta, 1 to 2 minutes."
     ],
     "c_time":"30",
     "serves":"7",
@@ -201,6 +207,178 @@
     "author":"Ploy",
     "photo": "padthai.png"
 }
+
+{   
+    "dish_name":"Meatloaf",
+    "descr":"This is a very easy and no fail recipe for American-style meatloaf. It won't take long to make at all and it's quite good!",
+    "ingr": [ 
+        "680g beef mince",
+        "1 egg",
+        "1 onion, chopped",
+        "250ml milk",
+        "110g dried breadcrumbs",
+        "salt and pepper to taste",
+        "2 tablespoons brown sugar",
+        "2 tablespoons prepared mustard",
+        "5 tablespoons ketchup"
+        ],
+    "step": [
+        "Preheat oven to 180 C / Gas 4.",
+        "In a large bowl, combine the mince, egg, onion, milk and breadcrumbs.", 
+        "Season with salt and pepper and place in a lightly greased 23x13cm loaf tin, or form into a loaf and place in a lightly greased baking tin.",
+        "In a separate small bowl, combine the brown sugar, mustard and ketchup. Mix well and pour over the meatloaf.",
+        "Bake for 1 hour."
+        ],
+    "c_time":"60",
+    "serves":"8",
+    "cuisine":"American",
+    "author":"Clinton",
+    "photo": "meatloaf.jpg"
+}
+
+{   
+    "dish_name":"Sheperds Pie",
+    "descr":"Shepherd’s pie is a classic recipe that’s so easy to follow and will make a delicious traditional pie topped with mashed potato every time – the whole family will love it.",
+    "ingr": [
+        "1 tablespoon oil",
+        "2 medium onions, peeled and chopped",
+        "2 medium carrots (about 250g/8oz) peeled and finely chopped",
+        "500g (1lb) minced lamb",
+        "1 rounded tablespoon flour",
+        "2 tablespoons tomato puree",
+        "1-2 tablespoons Worcestershire sauce",
+        "fresh thyme sprigs or 1 teaspoon dried thyme",
+        "200ml (7 fl oz) lamb or vegetable stock"
+        ],
+    "step": [
+        "Set the oven to moderate Gas Mark 4 or 180°C/450°F. Put the pie dish into heat up.",
+        "Heat the oil in a large pan, add the onion and cook over a medium heat for 5 minutes.",
+        "Add the carrot, cover the pan and cook another 5 minutes.",
+        "Remove the vegetables from the pan. Heat the pan again, add the meat and cook until browned underneath then turn it in the pan and cook another minute or two.",
+        "Sprinkle in the flour, stir well to coat the meat, and brown then add the puree, sauce, herbs and stock. Bring to the boil, then reduce the heat and simmer for 10-15 minutes",
+        "Spoon the lamb mixture into the pie dish, smooth the surface then carefully put spoonfuls of mash round the edge and then the middle. Smooth it over and fork or furrow the top.",
+        "Bake the shepherd’s pie for 30–40 minutes or until the top is browned."
+        ],
+    "c_time":"65",
+    "serves":"4",
+    "cuisine":"British",
+    "author":"Blair",
+    "photo":"sheperdpie.jpg"
+}
+
+{
+    "dish_name":"Chinese Curry Sauce",
+    "descr":"A chinese curry sauce to serve over grilled chicken breasts with rice and peas on the side.",
+    "ingr": [
+        "3 tablespoons butter",
+        "1/2 onion, finely sliced",
+        "1 1/2 tablespoons hot curry powder",
+        "1 tablespoon plain flour",
+        "225ml hot chicken stock",
+        "225ml milk",
+        "1/2 teaspoon treacle (optional)",
+        "2 or 3 tablespoons of double cream"
+    ],
+    "step":[
+        "Melt butter in a large frying pan over medium-low heat. Add the sliced onion and cook for 5 minutes, or until softened.",
+        "Sprinkle over the curry powder and the flour; cook for another minute or so until well mixed in.",
+        "Pour in the hot chicken stock, milk and 1/2 teaspoon treacle.",
+        "Simmer gently over low heat for 10 or 15 minutes, stirring often until it has thickened a bit.",
+        "Remove from the heat and stir in cream. Taste and season with salt."
+        ],
+    "c_time":"35",
+    "serves":"3",
+    "cuisine":"Chinese",
+    "author":"Jake",
+    "photo": "chinesecurrysauce.jpg"
+}
+
+{
+    "dish_name":"Samosa",
+    "descr":"A baked dish with a savoury filling, such as spiced potatoes, onions, peas, lentils, macaroni, noodles, cheese, minced lamb or minced beef.",
+    "ingr": [
+        "1 tablespoon olive oil",
+        "1 medium onion, chopped",
+        "1 1/2 teaspoons curry powder",
+        "Kosher salt and black pepper",
+        "2 cups store-bought refrigerated mashed or frozen mashed potatoes, thawed (about 16 ounces)",
+        "1 10-ounce package frozen peas, thawed",
+        "1 15-ounce package refrigerated piecrusts"
+    ],
+    "step":[ 
+        "Heat oven to 375° F. Heat the oil in a large saucepan over medium heat.", 
+        "Add the onion and cook, stirring occasionally, until soft and golden brown, 10 to 12 minutes.", 
+        "Add the curry powder until fragrant, about 1 minute. Stir in the potatoes and peas.",
+        "Unroll the piecrusts and cut each into 6 triangles.",
+        "Place a heaping tablespoon of the potato mixture in the center of each piece. Gather the corners of the dough and pinch to form a point.",
+        "Pinch the seams to seal. Transfer to a baking sheet.",
+        "Bake the samosas until golden, 22 to 25 minutes. Serve with the mango chutney, if using."
+        ],
+    "c_time":"55",
+    "serves":"5",
+    "cuisine":"Chinese",
+    "author":"Liz",
+    "photo":"samosa.jpg"
+}
+
+{
+    "dish_name":"Mini Mozzarella Pizzas",
+    "descr":"These are mini mozzarella pizzas topped with kale.",
+    "ingr":[
+        "6 (1-oz.) miniature whole-wheat pita rounds (such as Toufayan)",
+        "3 tablespoons extra-virgin olive oil, divided",
+        "1/2 cup thinly sliced shallots",
+        "1 tablespoon sliced garlic",
+        "6 ounces baby kale",
+        "1/2 cup pizza sauce (such as Rao's)",
+        "2 1/2 ounces preshredded 2% reduced-fat Italian cheese blend (about 2/3 cup)",
+        "1 1/2 ounces fresh mozzarella cheese, shredded (about 1/3 cup)",
+        "1/4 cup heirloom cherry tomatoes, sliced",
+        "1/2 teaspoon black pepper"
+        ],
+        "step": [
+            "Preheat broiler to high with oven rack in middle position.",
+            "Split each pita in half horizontally to get 12 rounds. Arrange rounds, cut side up, on a baking sheet; drizzle with 2 tablespoons oil.", 
+            "Broil 2 to 3 minutes or until lightly toasted.",
+            "Heat remaining 1 tablespoon oil in a large skillet over medium-high.", 
+            "Add shallots and garlic; sauté 2 minutes or until browned. Stir in kale; cook 2 minutes or until wilted. Remove pan from heat.",
+            "Spread about 2 teaspoons pizza sauce over each pita round; top evenly with kale mixture, cheeses, and tomatoes.", 
+            "Sprinkle evenly with pepper and salt. Broil 4 to 5 minutes or until cheeses are melted."
+        ],
+        "c_time":"20",
+        "serves":"4",
+        "cuisine":"Italian",
+        "author":"Adam",
+        "photo":"minimozzarella.jpg"
+}
+
+{
+    "dish_name":"Salmon Shioyaki",
+    "descr":"Salted grilled salmon.",
+    "ingr":[
+        "4 salmon fillets, with skin, scaled, deboned",
+        "1 1/2 teaspoons sea salt",
+        "1 tablespoon vegetable oil"
+        ]
+    "step": [
+        "Dry the salmon fillets with paper towels. Rub sea salt on both sides of fillets, then wrap the salmon loosely with paper towel and let it sit in the refrigerator for about an hour.",
+        "After an hour, heat pan to medium to medium high heat and coat bottom of pan with vegetable oil. Test the pan temperature by touching the very edge of the fillet to the pan. If it sizzles, the pan is ready!",
+        "Arrange the fillets in the pan, skin side down. Remember to lay it away from you so you don't splash any oil on yourself. Cook for about 5 mins. Carefully urn fillets over and cook about 3 mins more.",
+        "Serve immediately with steamed rice and a wedge of lemon. We had it with nori, lemon, and furikake!"
+    ],
+    "c_time":"25",
+    "serves":"1",
+    "cuisine":"Japanese",
+    "author":"Sonyia",
+    "photo": "salmonshioyaki.jpg"
+}
+
+
+
+
+
+
+
 
 
 {

@@ -32,7 +32,7 @@ $(document).ready(function(){
             },
             author:{
                 required: true,
-                minlength: 5,
+                minlength: 3,
                 maxlength: 50
             },
             photo: {
@@ -65,7 +65,7 @@ $(document).ready(function(){
             c_time:{
                 required: "This is required",
                 min: "Miniumum time allowed is 5 minutes",
-                maxs: "Maximum time allowed is 5 minutes"                 
+                maxs: "Maximum time allowed is 180 minutes"                 
             },
             serves:{
                 required: "Please select an option"
@@ -75,7 +75,7 @@ $(document).ready(function(){
             },
             author:{
                 required: "This is required",
-                minlength: "Enter at least 5 characters",
+                minlength: "Enter at least 3 characters",
                 maxlength: "Max length exceeded"
             },
             photo: {
@@ -121,7 +121,7 @@ $(document).ready(function(){
         	},
             author:{
                 required: true,
-                minlength: 5,
+                minlength: 3,
                 maxlength: 50
             },
             ingr:{
@@ -150,11 +150,11 @@ $(document).ready(function(){
             c_time:{
                 required: "This is required",
                 min: "Miniumum time allowed is 5 minutes",
-                maxs: "Maximum time allowed is 5 minutes"                 
+                maxs: "Maximum time allowed is 180 minutes"                 
             },
             author:{
                 required: "This is required",
-                minlength: "Enter at least 5 characters",
+                minlength: "Enter at least 3 characters",
                 maxlength: "Max length exceeded"
             },
             ingr:{
