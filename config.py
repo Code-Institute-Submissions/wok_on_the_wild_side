@@ -1,0 +1,1 @@
+mongo_uri = 'mongodb://root:9604996049@ds241489.mlab.com:41489/wok_on_the_wild_side'
