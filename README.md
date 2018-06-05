@@ -1,5 +1,7 @@
 # WokOnTheWildSide - Project 3
 
+[![Build Status](https://travis-ci.org/DeanFlint/wok_on_the_wild_side.svg?branch=master)](https://travis-ci.org/DeanFlint/wok_on_the_wild_side)
+
 ## Getting Started
 
 This web app allows users to store and access cooking recipes (submitted by themselves and other users). 
