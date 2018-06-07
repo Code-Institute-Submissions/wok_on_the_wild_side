@@ -1,7 +1,5 @@
 # WokOnTheWildSide - Project 3
 
-[![Build Status](https://travis-ci.org/DeanFlint/wok_on_the_wild_side.svg?branch=master)](https://travis-ci.org/DeanFlint/wok_on_the_wild_side)
-
 ## Getting Started
 
 This web app allows users to store and access cooking recipes (submitted by themselves and other users). 
@@ -66,11 +64,7 @@ Click [here](wireframe.pdf) to view the wireframe of this project.
 
 ``` (env)$ pip install -r requirements.txt ```
 
-7. Open app.py using a text editor to amend the port number on the bottom line, for example:
-
-``` app.run(host=os.getenv('IP'), port=5005, debug=True) ```
-
-8. Run the python file:
+7. Run the python file:
 
 ``` python app.py ```
 

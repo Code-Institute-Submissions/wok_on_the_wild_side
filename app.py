@@ -146,7 +146,13 @@ def view_cuisine():
 def edit_cuisine():
     return render_template("edit_cuisine.html")
 
+# if __name__ == '__main__':
+#     app.run(host=os.environ.get('IP'),
+#         port=int(os.environ.get('PORT')),
+#         debug=True)
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-        port=int(os.environ.get('PORT')),
+        port=int(5005),
         debug=True)
+        
