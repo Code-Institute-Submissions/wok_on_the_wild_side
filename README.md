@@ -72,13 +72,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Testing
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-TO DO
-```
+Please click [here](/tests) to view the testing.
 
 ## Contributing
 
