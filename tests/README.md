@@ -2,7 +2,7 @@
 
 ## Browser Compatability
 
-Please click [here](/browserCompatTests) to view my browser compatability tests. I've tested Google Chrome, Firefox, Safari, Internet Explorer on small, medium and large screens as well as on mobile screens.
+Please click [here](../tests/browserCompatTests) to view my browser compatability tests. I've tested Google Chrome, Firefox, Safari, Internet Explorer on small, medium and large screens as well as on mobile screens.
 
 ## Forms Testing
 
