@@ -1,6 +1,7 @@
 # WokOnTheWildSide - Project 3
 
-## Getting Started
+
+### Description
 
 This web app allows users to store and access cooking recipes (submitted by themselves and other users). 
 
@@ -14,7 +15,8 @@ The recipe data is all stored in MongoDB.
 Pagaination has been created and used to minimise the need to scroll down the page to see the list of recipes. 
 I've used Materialize for certain components and for a responsive view.
 
-### Prerequisites
+
+### Built with...
 
 Some the tech used includes:
 
@@ -31,11 +33,13 @@ Some the tech used includes:
 - [Google Fonts](https://fonts.google.com/) 
     - **Google Fonts** is used to style the text in my site.
 
-## WireFrame
+
+### WireFrame
 
 Click [here](wireframe.pdf) to view the wireframe of this project.
 
-## To initilise and edit
+
+### To initilise and edit
 
 1. Download Python 3: (http://www.python.org/download/)
 
@@ -68,26 +72,23 @@ Click [here](wireframe.pdf) to view the wireframe of this project.
 
 ``` python app.py ```
 
-End with an example of getting some data out of the system or using it for a little demo
 
-## Testing
+### Testing
 
 Please click [here](/tests) to view the testing.
 
-## Contributing
+
+### Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Authors
+
+### Authors
 
 * **Dean Flint** - *Initial work* - [Dean Flint](https://github.com/DeanFlint)
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
+### Acknowledgments
 
 * The good people at CodeInstitute!
 
